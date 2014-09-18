@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:text="已配对的蓝牙设备"      
+        />
+    <ListView 
+        android:id="@+id/matchedList"
+        android:layout_width="fill_parent"
+
+		android:layout_height="wrap_content"        
+        
+        
+        ></ListView>
+    <Button
+        android:id="@+id/searchBlueteeth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索蓝牙设备"
+        android:onClick="onSearch"/>
+ 
+    <TextView 
+        android:id="@+id/searchedTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="#333333"
+        android:text="其他可用设备"      
+        />
+    <ListView 
+        
+        android:id="@+id/searchedList"
+        android:layout_width="fill_parent"
+
+		android:layout_height="wrap_content" 
+        
+        
+        
+        ></ListView>
+</LinearLayout>
